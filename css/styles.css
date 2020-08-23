@@ -1,0 +1,206 @@
+
+/* Aqui reseta todas as margens e paddings padroes do navegador */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Aqui começa a estilização do conteúdo da página*/
+body {
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif; 
+    height: 100vh;
+
+}
+
+@media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+
+header {
+      background-size: auto 100vh;
+    height: 0.2rem;
+}
+
+section {
+    background-size: auto 100vh;
+    height: 100vh;
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Aqui começa a estilização do menu */
+
+.menu {
+    background-color:#E63888;
+    font-size: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    list-style: none;
+    padding: 0 0.55em;
+}
+
+.menu a {
+    display: block;
+    padding: 23px;
+    transition: background-color 1.5s, color 1.5s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #FFC5CB;
+}
+
+/* Aqui começa a section do menu Home */
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.home * {
+    margin:0.5rem;
+}
+
+.titulo {
+    color: black;
+    text-align: center;
+    height: 100px;
+}
+
+.subtitle,
+.site-titulo {
+    font-family: 'Handlee', cursive;
+    color: #E63888;
+    font-size: 50px;
+}
+
+.imgHome,
+.imgSobre {
+    height: 350px;
+    width: 350px;
+}
+
+
+/* Aqui começa a section do menu Sobre*/
+.sobre * {
+    width:100%;
+}
+
+.sobre-lista {
+    background-color: pink;
+}
+
+.sobre {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sobre-titulo {
+    padding: 5rem 0;
+}
+
+.sobre-imagem {
+    padding: 0.5rem;
+}
+
+.sobre-conteudo {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sobre-texto h2, p {
+    padding: 10px;
+    margin-bottom: auto;
+}
+
+/* Aqui começa a section do menu Baixe aqui */
+.baixe-lista {
+    display:flex;
+    flex-direction: column;
+}
+
+.baixe-imagem {
+    display:flex;
+    flex-direction: row;
+}
+
+.baixe-imagem img {
+    height: 100px;
+    width: 300px;
+}
+
+/* Aqui começa a media query pra tornar o design responsivo*/
+
+@media (max-width: 700px) {
+    .home {
+        margin:0.1rem 0;
+        height: 0;
+    }
+    .outronome {
+        display:flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .sobre-conteudo {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .sobre-texto p {
+        padding: 1rem;
+        margin-bottom: auto;
+    }
+
+    .baixe-imagem img {
+        height: 80px;
+        width: 200px;
+    }
+}
+
+
+/* Aqui é o rodapé da página*/
+footer {
+    background-color:#E63888;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
