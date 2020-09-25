@@ -62,7 +62,7 @@ section {
     background-color:#E63888;
     font-size: 20px;
     width: 100%;
-    position: relative;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
