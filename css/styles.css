@@ -28,7 +28,7 @@ body {
 
 
 header {
-      background-size: auto 100vh;
+    background-size: auto 100vh;
     height: 0.2rem;
 }
 
@@ -54,6 +54,7 @@ section {
 .logo img{
     width: 70%;
     margin-left: 20%;
+    margin-top: -10px;
     top: 0;
 }
 
@@ -173,7 +174,6 @@ a:hover {
 .sobre-texto{
     width: 90%;
     padding: 10px;
-
 }
 
 /* Aqui começa a section do menu Baixe aqui */
